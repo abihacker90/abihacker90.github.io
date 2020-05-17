@@ -1,0 +1,138 @@
+/* ==== GENERAL STYLES ==== */
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    line-height: 2rem;
+    font-size: 1.125rem;
+}
+p, h1, h2, h3, h4, h5, h6, li, figcaption {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/* ==== HEADER STYLES ==== */
+header {
+    width: 100%;
+    height: 55px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    background: url('/assets/iron_texture47.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: contrast(1) opacity(0.95); 
+}
+ul.nav {
+    align-items: center;
+    justify-content: space-between;
+    height: 2.5rem;
+    margin-left: 150px;
+    padding-bottom: 10px;
+}
+li a {
+    color: gold;
+}
+ #header-link:hover {
+    text-decoration: none;
+    color: white;
+}
+.header-text {
+    position: relative;
+    left: 100px;
+    top: 3px;
+    width: 300px;
+}
+h1 {
+    font-family: 'Passion One', cursive;
+    margin-bottom: 0;
+    color: goldenrod;
+}
+.header-wrapper {
+    float: left;
+    width: 45%;
+}
+nav.header-wrapper {
+    padding-top: 20px;
+}
+
+/* MEDIA QUERYS PLACE */
+
+/* ===== MAIN STYLES ===== */
+main {
+    width: 80vw;
+    margin: auto;
+}
+#aboutus {
+    padding-top: 60px;
+}
+p {
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 26px;
+    letter-spacing: 0.2px;
+    margin-top: 30px;
+}
+span {
+    text-decoration: underline;
+}
+.wrapper {
+    float: left;
+    width: 45%;
+}
+.wrapper:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+#products {
+    width: 100%;
+    height: 80vh
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    width: 100%;
+}
+section {
+    padding-top: 60px;
+}
+table {
+    width: 100%;
+    border: 0.5px solid goldenrod;
+    margin-bottom: 50px;
+}
+th, td {
+    padding: 10px;
+}
+th {
+    border-bottom: 1px solid goldenrod;
+}
+h5  {
+    padding-bottom: 25px;
+    text-align: center;
+}
+h4 {
+    border-bottom: 2px solid gold;
+    border-right: 2px solid gold;
+    display: inline-block;
+    padding-right: 8px;
+    padding-bottom: 5px;
+    margin-bottom: 1.5rem !important;
+}
+
+
+/* ==== FOOTER STYLES ==== */
+footer {
+    width: 100vw;
+    height: 10%;
+    text-align: center;
+    color: white;
+    background: #000;
+    opacity: 0.8;
+}
