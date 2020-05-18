@@ -17,7 +17,7 @@ p, h1, h2, h3, h4, h5, h6, li, figcaption {
 /* ==== HEADER STYLES ==== */
 header {
     width: 100%;
-    height: 55px;
+    height: 8%;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -29,8 +29,8 @@ header {
 ul.nav {
     align-items: center;
     justify-content: space-between;
-    height: 2.5rem;
-    margin-left: 150px;
+    height: 8%;
+    margin-left: 10px;
     padding-bottom: 10px;
 }
 li a {
@@ -41,10 +41,8 @@ li a {
     color: white;
 }
 .header-text {
-    position: relative;
-    left: 100px;
-    top: 3px;
-    width: 300px;
+    margin-left: 8%;
+    height: 100%;
 }
 h1 {
     font-family: 'Passion One', cursive;
@@ -52,13 +50,12 @@ h1 {
     color: goldenrod;
 }
 .header-wrapper {
+    width: 40%;
     float: left;
-    width: 45%;
 }
 nav.header-wrapper {
     padding-top: 20px;
 }
-
 /* MEDIA QUERYS PLACE */
 
 /* ===== MAIN STYLES ===== */
@@ -70,7 +67,6 @@ main {
     padding-top: 60px;
 }
 p {
-    text-align: justify;
     font-size: 1rem;
     line-height: 26px;
     letter-spacing: 0.2px;
@@ -90,7 +86,7 @@ span {
 }
 #products {
     width: 100%;
-    height: 80vh
+    height: 80vh;
 }
 img {
     display: block;
@@ -103,7 +99,7 @@ section {
     padding-top: 60px;
 }
 table {
-    width: 100%;
+    width: 95%;
     border: 0.5px solid goldenrod;
     margin-bottom: 50px;
 }
@@ -129,7 +125,7 @@ h4 {
 
 /* ==== FOOTER STYLES ==== */
 footer {
-    width: 100vw;
+    width: 100%;
     height: 10%;
     text-align: center;
     color: white;
