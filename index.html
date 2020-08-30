@@ -1,332 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap" rel="stylesheet">
-    <title>metalsupermarket</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet">
+    <title>Savaria Rézfúvós Együttes</title>
 </head>
+
 <body>
-<header>
-    <div class="header-text header-wrapper">
-        <h1 class="title">metalsupermarket</h1>
-    </div>
-    <nav class="header-wrapper">
-        <ul class="nav">
-            <li><a id="header-link"  href="#aboutus">Rólunk</a></li>
-            <li><a id="header-link"  href="#products">Termékeink</a></li>
-            <li><a id="header-link"  href="#delivery_plan">Szállítási program</a></li>
-            <li><a id="header-link"  href="#contact">Elérhetőségek</a></li>
-        </ul>
-    </nav>
-</header>
-<main>
-    <section id="aboutus">
-        <h4>Rólunk</h4>
-        <p>Cégünk 2012-ben alakult, több mint 15 évnyi  szerszám- és rozsdamentesacél értékesítési tapasztalattal a háttérben.</p>
-        <p>Fő célkitűzésünk, hogy partnereink igényeit teljeskörűen, rugalmas és személyre szabott szolgáltatásainkkal elégítsük ki. Vállaljuk rozsdamentes- és szerszámacélok, valamint hegesztési segédanyagok beszerzését és telephelyre szállítását rövid határidővel és kedvező árakkal.  Vállaljuk ritka ötvözetek, ritka dimenziók felkutatását és beszerzését.</p>
-    </section>
-    <section id="products">
-        <h4>Termékeink</h4>
-        <p>Cégünk folyamatosan szélesíti a kínált ínált termékek spektrumát. Jelen pillanatban a következő típusú termékekkel várjuk megrendelésüket:</p>
-        <div class="wrapper">
-            <p><span>Szerszámacélok:</span></p>
+    <header>
+        <!--- <h1>Savaria Rézfúvós Együttes</h1> -->
+        <img class="img-responsive" id="logo"" src="/assets/WEB.png" alt="logo">
+    </header>
+    <main>
+        <section class="about container">
+            <h3>A Savaria Rézfúvós Együttes a Savaria Szimfonikus Zenekar hivatalos együttese.</h3></br>
+            <p>Egyedi hangzásvilágukat megalapozta a több évtizedes múlt hagyományaihoz való hűség
+                ötvözése az új utakat kereső fiatalos lendülettel. Első koncertjüket 1976-ban adták.
+                Bár a tagok azóta természetesen cserélődtek, de a zenekari közös munka,
+                az egymásra figyelés, a minőségre való törekvés megőrizte a “Savaria” hangzást.
+                A SBE a Savaria Szimfonikus Zenekar tagjaiból alakult.
+                Egyedi hangzásvilágukkal a magyar zenei élet egyik meghatározó rézfúvós
+                formációja lettek. Repertoárjuk a reneszánsz kor zenéjétöl napjaink könnyűzenéjéig
+                számos stílust és műfajt átölel. Nyitottak minden stílus felé, a klasszikus zenétől
+                az operetten és a filmzenéken túl szívesen játszák a mai kor könnyűzenei slágereit is,
+                egyetlen kritériumuk van, a minőség.
+                Magyarországi koncerttermek mellett Európa számos országának
+                ( Ausztria, Németország, Csehország, Szlovákia, Franciaország stb...)
+                hangversenytermeiben megfordultak.</p>
+        </section>
+        <hr>
+        <section class="members_wrapper">
+            <div class="container">
+                <h3>Tagok</h3>
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xs-4 members" id="member_1">
+                        <img class="img-responsive" src="/assets/imi.jpg" alt="Németh_Imre">
+                        <span>Németh Imre - trombita</span>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-4 members" id="member_2">
+                        <img class="img-responsive" src="/assets/ádám.jpg" alt="Bihacker_Ádám">
+                        <span>Bihacker Ádám - trombita</span>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-4 members" id="member_3">
+                        <img class="img-responsive" src="/assets/robi.jpg" alt="Kovács_Róbert">
+                        <span>Kovács Róbert - kürt</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xs-4 members" id="member_4">
+                        <img class="img-responsive" src="/assets/guszti.jpg" alt="Juhász_Tibor">
+                        <span>Juhász Tibor - harsona</span>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-4 members" id="member_5">
+                        <img class="img-responsive" src="/assets/tibi.jpg" alt="Szentgyörgyvári_Tibor">
+                        <span>Szentgyörgyvári Tibor - tuba</span>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-4 members" id="member_6">
+                        <img class="img-responsive" src="/assets/jani_resized2.jpg" alt="Gazdag_János">
+                        <span>Gazdag János - ütőhangszerek</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe  class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/j1xw4nEUCPU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <hr>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/eMtiY4qYF3k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                
+        </section>
+        <hr>
+        <section class="contact">
+            <h3>Elérhetőségeink:</h3>
             <ul>
-                <li>hidegmunkaacélok</li>
-                <li>melegmunkaacélok</li>
-                <li>műanyagforma acélok</li>
+                <li>Telefon: <a href="tel:0636209993290">+36209993290</a></li>
+                <li>Email: <a href="mailto:savariabrass@gmail.com">savariabrass@gmail.com</a></li>
+                <li>Facebook: <a href="http://facebook.com/savariarezfuvosegyuttes/" class="fa fa-facebook-square"> Savaria Rézfúvós Együttes</a></li>
             </ul>
-            <p><span>Korrózió álló acélok:</span></p>
-            <ul>
-                <li>lemezek</li>
-                <li>csövek</li>
-                <li>zártszelvények</li>
-            </ul>
-            <p><span>Hegesztési termékek:</span></p>
-            <ul>
-                <li>elektródák</li>
-                <li>huzalok</li>
-                <li>AWI pálcák</li>
-            </ul>
-        </div>
-        <div class="wrapper">
-            <img src="assets/Stainless-Steel-process.jpg" alt="steel-process">
-        </div>
-    </section>
-    <section id="delivery_plan">
-        <h4>Szállítási program</h4>
-        <table>
-            <h5>Köracél</h5>
-                <tr>
-                    <th>Anyagminőség</td>
-                    <th>Méret(mm)</td>
-                    <th>Anyagminőség</td>
-                    <th>Méret(mm)</td>
-                </tr>
-                <tr>
-                    <td>1.2063</td>
-                    <td>D 8,2 - D 410</td>
-                    <td>1.0503 / C45 / S451.2201</td>
-                    <td>D 20 – D 600</td>
-                </tr>
-                <tr>
-                    <td>1.2201</td>
-                    <td>D 10,2 - D 403</td>
-                    <td>S355J2G3 / St-52 / Fe355C/FF / B50.36</td>
-                    <td>D 20 – D 600</td>
-                </tr>
-                <tr>
-                    <td>1.2080</td>
-                    <td>D 101,5 – D 353</td>
-                    <td>1.7035 / 41Cr4 / Cr 3 Z</td>
-                    <td>D 20 – D 330</td>
-                </tr>
-                <tr>
-                    <td>1.2842/ M1</td>
-                    <td>D15 – D 503</td>
-                    <td>1.7225 / 42CrMo4 / CMo 4 Z</td>
-                    <td>D 20 – D 600</td>
-                </tr>
-                <tr>
-                    <td>1.2379 / K8</td>
-                    <td>D 15,5 – D 615</td>
-                    <td>1.7225+QT / 42CrMo4+QT / CMo4 +QT</td>
-                    <td>D 20 – D 650</td>
-                </tr>
-                <tr>
-                    <td>1.2550 / W6</td>
-                    <td>D 20,5 – D 121,5</td>
-                    <td>1.6582+A / 34CrNiMo6+AD</td>
-                    <td>D 25 – D 280</td>
-                </tr>
-                <tr>
-                    <td>1.4034</td>
-                    <td>D 16 – D 400</td>
-                    <td>1.6582+QT / 34CrNiMo6+QT</td>
-                    <td>D 25 – D 330</td>
-                </tr>
-                <tr>
-                    <td>1.3505 / GO 3</td>
-                    <td>D 20,5 – D 200</td>
-                    <td>1.7131 / 16MnCr5 / BC 31.2379</td>
-                    <td>D 20 – D 400</td>
-                </tr>
-                <tr>
-                    <td>1.3343 / R6</td>
-                    <td>D10 – D150</td>
-                    <td>1.7147</td>
-                    <td>D 20 – D 180</td>
-                </tr>
-                <tr>
-                    <td>1.2343</td>
-                    <td>D 15,5 – D 400</td>
-                    <td>1.8159 / CrV 3 Z / 51 CrV 4 / SZ 2</td>
-                    <td>D 20 – D 160</td>
-                </tr>
-        </table>
-        <table>
-          <h5>Laposacél</h5>
-          <tr>
-              <th>Anyagminőség</th>
-              <th>Vastagság(mm)</th>
-              <th>Szélesség</th>
-          </tr>
-          <tr>
-              <td>1.0570 / S355J2+N</td>
-              <td>20-90</td>
-              <td>200-600</td>
-          </tr>
-          <tr>
-              <td>1.2063</td>
-              <td>8-80</td>
-              <td>60-600</td>
-          </tr>
-          <tr>
-              <td>1.2201</td>
-              <td>16-300</td>
-              <td>40-500</td>
-          </tr>
-          <tr>
-              <td>1.2080 / K100 / K1</td>
-              <td>16-80</td>
-              <td>250-500</td>
-          </tr>
-          <tr>
-              <td>1.2379 / K 8</td>
-              <td>8-300</td>
-              <td>70-600</td>
-          </tr>
-          <tr>
-              <td>1.2550 / W 6</td>
-              <td>16-150</td>
-              <td>80-610</td>
-          </tr>
-          <tr>
-              <td>80-610</td>
-              <td>8-120</td>
-              <td>400-610</td>
-          </tr>
-          <tr>
-              <td>1.1730 / C45 /</td>
-              <td>20-90</td>
-              <td>200-600</td>
-          </tr>
-          <tr>
-              <td>1.2311+QT</td>
-              <td>20-90</td>
-              <td>200-600</td>
-          </tr>
-          <tr>
-              <td>1.2312+QT</td>
-              <td>20-80</td>
-              <td>200-600</td>
-          </tr>
-          <tr>
-              <td>1.2738+QT 32-40 HRC</td>
-              <td>205-305</td>
-              <td>1000</td>
-          </tr>
-          <tr>
-              <td>1.2343, 1.2343 ESR (ESU)</td>
-              <td>20-400</td>
-              <td>165-1000</td>
-          </tr>
-          <tr>
-              <td>1.2344 ESR (ESU) / K 13</td>
-              <td>300</td>
-              <td>1000</td>
-          </tr>
-          <tr>
-              <td>1.2714 / NK 2</td>
-              <td>	111-315</td>
-              <td>600-1000</td>
-          </tr>
-          <tr>
-              <td>1.2767</td>
-              <td>70-160</td>
-              <td>600-990</td>
-          </tr>
-          <tr>
-              <td>B50.361.3343 / SW7M</td>
-              <td>14-60</td>
-              <td>510</td>
-          </tr>
-          <tr>
-              <td>1.2842 / M1</td>
-              <td>8-300</td>
-              <td>603, 990</td>
-          </tr>
-        </table>
-        <table>
-            <h5>Lemez</h5>
-            <tr>
-                <th>Anyagminőség</th>
-                <th>Vastagság(mm)</th>
-                <th>Szélesség(mm)</th>
-                <th>Hossz(mm)</th>
-            </tr>
-            <tr>
-                <td>1.1730 / 1.0503 / C45 / S45</td>
-                <td>1-275</td>
-                <td>1000-2000</td>
-                <td>2000-6000</td>
-            </tr>
-            <tr>
-                <td>S355J2G3 / St-52 / Fe355C/FF / B50.36</td>
-                <td>20-200</td>
-                <td>2000</td>
-                <td>3000-6000</td>
-            </tr>
-            <tr>
-                <td>1.7131 / 16MnCr5 / BC 3</td>
-                <td>16-100</td>
-                <td>2000</td>
-                <td>6000</td>
-            </tr>
-            <tr>
-                <td>1.7035 / 41Cr4 / Cr 3 Z</td>
-                <td>6-120</td>
-                <td>1000-2000</td>
-                <td>2000-6000</td>
-            </tr>
-            <tr>
-                <td>1.7225+QT / 42CrMo4 / CMo4</td>
-                <td>10-160</td>
-                <td>2000</td>
-                <td>3500-6000</td>
-            </tr>
-            <tr>
-                <td>1.8159 / CrV3 Z / 51CrV4</td>
-                <td>0,5-12</td>
-                <td>1000-2000</td>
-                <td>2000-6000</td>
-            </tr>
-            <tr>
-                <td>1.2311+QT</td>
-                <td>18-350</td>
-                <td>880-2000</td>
-                <td>2000-6000</td>
-            </tr>
-            <tr>
-                <td>1.2312+QT</td>
-                <td>15-400</td>
-                <td>600-2050</td>
-                <td>2000-6000</td>
-            </tr>
-            <tr>
-                <td>HARDFIELD 400 (Hardox 400-nak felel meg)</td>
-                <td>5-60</td>
-                <td>2000</td>
-                <td>5100-5800</td>
-            </tr>
-            <tr>
-                <td>HARDFIELD 500 (Hardox 500-nak felel meg)</td>
-                <td>8-50</td>
-                <td>2000</td>
-                <td>5100-6000</td>
-            </tr>
-            <tr>
-                <td>5100-6000</td>
-                <td>20 / 40 / 80</td>
-                <td>2025/1010/2000</td>
-                <td>6000-6300</td>
-            </tr>
-            <tr>
-                <td>S690QL</td>
-                <td>18</td>
-                <td>2000</td>
-                <td>5000</td>
-            </tr>
-            <tr>
-                <td>28MnB5</td>
-                <td>6/8/10/12</td>
-                <td>1500</td>
-                <td>2000</td>
-            </tr>
-        </table>
-    </section>
-    <section id="contact">
-        <h4>Elérhetőségeink</h4>
-        <p>Metal-Supermarket Kft.
-            <br>
-            HU 2890 Tata, Dankó Pista utca 8.
-        </p>
-        <p>Adószám: HU 23501021-2-11</p>
-        <p>Telefon: <a href="tel:%2B36%2070%20650%200693" target="_blank">+36 70 650 0693</a></p>
-        <p>Telefax: <a href="tel:%2B36%2034%20999%20255" target="_blank">+36 34 999 255</a></p>
-        <p>email: info@metalsupermarket.hu</p>
-        
-    </section>
-</main>
-<footer>
-    <div>
+        </section>
+    </main>
+    <footer>
         <small>@2020 <strong>Adam Bihacker</strong>, All Rights Reserved</small>
-    </div>
-</footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="script.js"></script>
+    </footer>
+
 </body>
+
 </html>

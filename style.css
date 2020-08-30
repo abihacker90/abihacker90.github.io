@@ -1,134 +1,85 @@
-/* ==== GENERAL STYLES ==== */
-
 * {
+    margin: 0;
     box-sizing: border-box;
-}
-body {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    line-height: 2rem;
-    font-size: 1.125rem;
-}
-p, h1, h2, h3, h4, h5, h6, li, figcaption {
-    font-family: 'Noto Sans', sans-serif;
 }
 
 /* ==== HEADER STYLES ==== */
 header {
-    width: 100%;
-    height: 8%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    background: url('/assets/iron_texture47.jpg');
+    width: 100vw;
+    height: 100vh;
+    background: url(/assets/header.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    filter: contrast(1) opacity(0.95); 
+    background-position: center;
 }
-ul.nav {
-    align-items: center;
-    justify-content: space-between;
-    height: 8%;
-    margin-left: 10px;
-    padding-bottom: 10px;
+header h1 {
+    font-size: 2.5rem;
 }
-li a {
-    color: gold;
-}
- #header-link:hover {
-    text-decoration: none;
-    color: white;
-}
-.header-text {
-    margin-left: 8%;
-    height: 100%;
-}
-h1 {
-    font-family: 'Passion One', cursive;
-    margin-bottom: 0;
-    color: goldenrod;
-}
-.header-wrapper {
-    width: 40%;
-    float: left;
-}
-nav.header-wrapper {
-    padding-top: 20px;
-}
-/* MEDIA QUERYS PLACE */
 
-/* ===== MAIN STYLES ===== */
-main {
-    width: 80vw;
-    margin: auto;
+#logo {
+    width: 20vw;
+    height: auto;
+    padding-top: 5px;
+    margin-left: 1rem;
+    
 }
-#aboutus {
-    padding-top: 60px;
+
+/* ==== MAIN STYLES ==== */
+section {
+    margin: 2rem;
+}
+.about {
+    padding-top: 1rem;
+    font-family: 'Merriweather', serif;
+}
+h3 {
+    padding: 1rem;
 }
 p {
-    font-size: 1rem;
-    line-height: 26px;
-    letter-spacing: 0.2px;
-    margin-top: 30px;
-}
-span {
-    text-decoration: underline;
-}
-.wrapper {
-    float: left;
-    width: 45%;
-}
-.wrapper:after {
-    content: "";
-    clear: both;
-    display: block;
-}
-#products {
-    width: 100%;
-    height: 80vh;
-}
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 20px;
-    width: 100%;
-}
-section {
-    padding-top: 60px;
-}
-table {
-    width: 95%;
-    border: 0.5px solid goldenrod;
-    margin-bottom: 50px;
-}
-th, td {
-    padding: 10px;
-}
-th {
-    border-bottom: 1px solid goldenrod;
-}
-h5  {
-    padding-bottom: 25px;
-    text-align: center;
-}
-h4 {
-    border-bottom: 2px solid gold;
-    border-right: 2px solid gold;
-    display: inline-block;
-    padding-right: 8px;
-    padding-bottom: 5px;
-    margin-bottom: 1.5rem !important;
+    line-height: 3rem;
+    padding: 1rem;
+    font-size: 1.5rem;
 }
 
+/* ==== MEMBERS STYLES ==== */
+.members_wrapper {
+    width: auto;
+    height: auto;
+    padding: 0.5rem;
+} 
+.members img:hover {
+    transform: scale(1.2);
+    transition: 0.5s ease-in-out;
+}
+.members {
+    padding: 1.5rem;
+    text-align: center;
+}
+span {
+    font-size: 1.25rem;
+}
+.img-responsive {
+    overflow: hidden;
+}
+
+
+/* ==== MEDIA STYLES ==== */
+
+
+
+/* ==== CONTACT STYLES ==== */
+li {
+    list-style: none;
+
+}
 
 /* ==== FOOTER STYLES ==== */
 footer {
-    width: 100%;
-    height: 10%;
     text-align: center;
-    color: white;
-    background: #000;
+    background: #000000;
     opacity: 0.8;
+    height: auto;
+}
+small {
+    color: #fff;
 }
