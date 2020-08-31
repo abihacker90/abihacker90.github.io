@@ -10,12 +10,29 @@ header {
     background: url(/assets/header.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
+    max-width: 100%;
 }
-header h1 {
-    font-size: 2.5rem;
+@media (min-width: 200px) {
+    header {
+        background: url(/assets/header.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+        height: 40vh;
+    }
 }
 
+@media (min-width: 568px) {
+    header {
+        background: url(/assets/header.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100vw;
+        height: 100vh;
+    }
+} 
 #logo {
     width: 20vw;
     height: auto;
@@ -34,6 +51,7 @@ section {
 }
 h3 {
     padding: 1rem;
+    font-size: 2rem;
 }
 p {
     line-height: 3rem;
