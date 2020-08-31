@@ -7,7 +7,7 @@
 header {
     width: 100vw;
     height: 100vh;
-    background: url(/assets/header.jpg);
+    background: url(/assets/header_red.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -15,7 +15,7 @@ header {
 }
 @media (min-width: 200px) {
     header {
-        background: url(/assets/header.jpg);
+        background: url(/assets/header_red.jpg);
         background-size: cover;
         background-position: center;
         width: 100vw;
@@ -25,7 +25,7 @@ header {
 
 @media (min-width: 568px) {
     header {
-        background: url(/assets/header.jpg);
+        background: url(/assets/header_red.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
