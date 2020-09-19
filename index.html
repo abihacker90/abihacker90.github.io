@@ -3,96 +3,77 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet">
-    <title>Savaria Rézfúvós Együttes</title>
+    <link rel="stylesheet" href="style.css">
+    <title>BinFinder app v.</title>
 </head>
 
 <body>
-    <header>
-        <!--- <h1>Savaria Rézfúvós Együttes</h1> -->
-        <img class="img-responsive" id="logo"" src="/assets/WEB.png" alt="logo">
+    <header class="container-fluid">
+        <nav>
+            <span onclick="openNav()"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></span>
+        </nav>
+        <div class="container-fluid logo">
+            <img class="img-fluid mx-auto d-block" src="/assets/logo-01.png" alt="logo" id="logo">
+        </div>
     </header>
-    <main>
-        <section class="about container">
-            <h3>A Savaria Rézfúvós Együttes a Savaria Szimfonikus Zenekar hivatalos együttese.</h3></br>
-            <p>Egyedi hangzásvilágukat megalapozta a több évtizedes múlt hagyományaihoz való hűség
-                ötvözése az új utakat kereső fiatalos lendülettel. Első koncertjüket 1976-ban adták.
-                Bár a tagok azóta természetesen cserélődtek, de a zenekari közös munka,
-                az egymásra figyelés, a minőségre való törekvés megőrizte a “Savaria” hangzást.
-                A SBE a Savaria Szimfonikus Zenekar tagjaiból alakult.
-                Egyedi hangzásvilágukkal a magyar zenei élet egyik meghatározó rézfúvós
-                formációja lettek. Repertoárjuk a reneszánsz kor zenéjétöl napjaink könnyűzenéjéig
-                számos stílust és műfajt átölel. Nyitottak minden stílus felé, a klasszikus zenétől
-                az operetten és a filmzenéken túl szívesen játszák a mai kor könnyűzenei slágereit is,
-                egyetlen kritériumuk van, a minőség.
-                Magyarországi koncerttermek mellett Európa számos országának
-                ( Ausztria, Németország, Csehország, Szlovákia, Franciaország stb...)
-                hangversenytermeiben megfordultak.</p>
-        </section>
-        <hr>
-        <section class="members_wrapper">
-            <div class="container">
-                <h3>Tagok</h3>
-                <div class="row">
-                    <div class="col-md-4 col-sm-4 col-xs-4 members" id="member_1">
-                        <img class="img-responsive" src="/assets/imi_red.jpg" alt="Németh_Imre">
-                        <span>Németh Imre - trombita</span>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-4 members" id="member_2">
-                        <img class="img-responsive" src="/assets/ádám_red.jpg" alt="Bihacker_Ádám">
-                        <span>Bihacker Ádám - trombita</span>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-4 members" id="member_3">
-                        <img class="img-responsive" src="/assets/robi_red.jpg" alt="Kovács_Róbert">
-                        <span>Kovács Róbert - kürt</span>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4 col-sm-4 col-xs-4 members" id="member_4">
-                        <img class="img-responsive" src="/assets/guszti_red.jpg" alt="Juhász_Tibor">
-                        <span>Juhász Tibor - harsona</span>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-4 members" id="member_5">
-                        <img class="img-responsive" src="/assets/tibi_red.jpg" alt="Szentgyörgyvári_Tibor">
-                        <span>Szentgyörgyvári Tibor - tuba</span>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-4 members" id="member_6">
-                        <img class="img-responsive" src="/assets/jani_red.jpg" alt="Gazdag_János">
-                        <span>Gazdag János - ütőhangszerek</span>
-                    </div>
-                </div>
+    <aside>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#" onclick="dropDown()" id="selective">SZELEKTÍV</a>
+            <div id="checkGroup" class="dropdown-content">
+                <label for="batteryContainer">Elem konténerek</label>
+                <input type="checkbox" id="batteryContainer" name="batteryContainer">
+                <br>
+                <label for="hazardousWaste">Veszélyes hulladék</label>
+                <input id="hazardousWaste" type="checkbox" name="hazardousWaste">
+                <br>
+                <label for="electricTrash">Elektronikai hulladék</label>
+                <input id="electricTrash" type="checkbox" name="electricTrash">
+                <br>
+                <label for="degradWaste">Lebomló hulladék</label>
+                <input id="degradWaste" type="checkbox" name="degradWaste">
+                <br>
+                <label for="capBin">Kupak gyűjtő</label>
+                <input id="capBin" type="checkbox" name="capBin">
             </div>
-        </section>
-        <hr>
-        <section>
-                <h3>Videók</h3>
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe  class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/j1xw4nEUCPU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <hr>
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/eMtiY4qYF3k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                
-        </section>
-        <hr>
-        <section class="contact">
-            <h3>Elérhetőségeink:</h3>
-            <ul>
-                <li>Telefon: <a href="tel:0636209993290">+36209993290</a></li>
-                <li>Email: <a href="mailto:savariabrass@gmail.com">savariabrass@gmail.com</a></li>
-                <li>Facebook: <a href="http://facebook.com/savariarezfuvosegyuttes/" class="fa fa-facebook-square"> Savaria Rézfúvós Együttes</a></li>
-            </ul>
-        </section>
+            <a onclick="openRightNav()" href="#">SZEMÉLYES PROFIL</a>
+            <a href="#" onclick="dropDownServices()">SZOLGÁLTATÁSOK</a>
+            <div id="servicesGroup" class="services" id="selective">
+                <a onclick="notifyPopUp()" href="#">Bejelentés</a>
+                <a onclick="wasteRemovePopUp()" href="#">Hulladék elszállítás</a>
+                <a onclick="infosPopUp()" href="#">Információk</a>
+            </div>
+        </div>
+    </aside>
+    <aside>
+        <div id="myRightSidenav" class="sidenav-right">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeRightNav()">&times;</a>
+            <p>content</p>
+            <p>content</p>
+            <p>content</p>
+        </div>
+    </aside>
+    <section class="container-fluid">
+        <div id="notification" class="informationContent"><p>content</p></div>
+        <div id="removewaste" class="informationContent"><p>content</p></div>
+        <div id="infos" class="informationContent"><p>content</p></div>
+    </section>
+    <main>
+        <div id="googleMap" style="width: 100%; height: 600px;">map</div>
     </main>
-    <footer>
-        <small>@2020 <strong>Adam Bihacker</strong>, All Rights Reserved</small>
-    </footer>
-
+    <script src="script.js"></script>
+    <script src="main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3KJg4J9uBmp5ndzVcjqPMuU4o4tqt6KE&callback=initMap"></script>
 </body>
 
 </html>
