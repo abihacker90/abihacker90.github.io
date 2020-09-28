@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -23,13 +24,18 @@
             <span onclick="openNav()"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></span>
         </nav>
         <div class="container-fluid logo">
-            <img class="img-fluid mx-auto d-block" src="/assets/logo-01.png" alt="logo" id="logo">
+            <p id="green">Green</p>
+            <p id="blue">Map</p>
+            <!-- <img class="img-fluid mx-auto d-block" src="/assets/logo-01.png" alt="logo" id="logo"> -->
         </div>
     </header>
     <aside>
         <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#" onclick="dropDown()" id="selective">SZELEKTÍV</a>
+            <div class="wrapper">
+                <h3>MENÜ</h3>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            </div>
+                <a href="#" onclick="dropDown()" id="selective">Szűrés</a>
             <div id="checkGroup" class="dropdown-content">
                 <label for="batteryContainer">Elem konténerek</label>
                 <input type="checkbox" id="batteryContainer" name="batteryContainer">
@@ -46,8 +52,8 @@
                 <label for="capBin">Kupak gyűjtő</label>
                 <input id="capBin" type="checkbox" name="capBin">
             </div>
-            <a onclick="openRightNav()" href="#">SZEMÉLYES PROFIL</a>
-            <a href="#" onclick="dropDownServices()">SZOLGÁLTATÁSOK</a>
+            <a onclick="openRightNav()" href="#">Profilom</a>
+            <a href="#" onclick="dropDownServices()">Szolgáltatások</a>
             <div id="servicesGroup" class="services" id="selective">
                 <a onclick="notifyPopUp()" href="#">Bejelentés</a>
                 <a onclick="wasteRemovePopUp()" href="#">Hulladék elszállítás</a>
@@ -58,22 +64,31 @@
     <aside>
         <div id="myRightSidenav" class="sidenav-right">
             <a href="javascript:void(0)" class="closebtn" onclick="closeRightNav()">&times;</a>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
+            <div>
+                <h3>Profilom</h3>
+            </div>
         </div>
     </aside>
     <section class="container-fluid">
-        <div id="notification" class="informationContent"><p>content</p></div>
-        <div id="removewaste" class="informationContent"><p>content</p></div>
-        <div id="infos" class="informationContent"><p>content</p></div>
+        <div id="notification" class="informationContent">
+            <p>content</p>
+        </div>
+        <div id="removewaste" class="informationContent">
+            <p>content</p>
+        </div>
+        <div id="infos" class="informationContent">
+            <p>content</p>
+        </div>
     </section>
     <main>
-        <div id="googleMap" style="width: 100%; height: 600px;">map</div>
+        <div id="map" class="map">map</div>
     </main>
     <script src="script.js"></script>
     <script src="main.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3KJg4J9uBmp5ndzVcjqPMuU4o4tqt6KE&callback=initMap"></script>
+    <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3KJg4J9uBmp5ndzVcjqPMuU4o4tqt6KE&callback=initMap"></script> -->
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJ9Ag-ThJDOjYsm4dHkd_Sm97n9mdvs-w&callback=initMap"
+        type="text/javascript"></script>
 </body>
 
 </html>

@@ -1,9 +1,19 @@
-/* Set the width of the side navigation to 250px */
-function openNav() {
+/* Set the width of the side navigation to 35%px */
+/*function openNav() {
   document.getElementById("mySidenav").style.width = "35%";
 }
+*/
 
-/* Set the width of the side navigation to 0 */
+ function openNav() {
+   let x = window.matchMedia("(max-width : 450px)");
+   if (x.matches) {
+     document.getElementById("mySidenav").style.width = "75%";
+   } else {
+     document.getElementById("mySidenav").style.width = "40%";
+   }
+ }
+
+
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
@@ -37,7 +47,7 @@ $(document).ready(function () {
   $(":checkbox").each(function () {
       $(this).hide();
 
-      var $image = $("<img src='assets/checkbox_icon_empty.svg' />").insertAfter(this);
+      let $image = $("<img src='assets/checkbox_icon_empty.svg' />").insertAfter(this);
       $image.css({"display": "flex", "float": "right", "padding-left": "1rem"});
 
       $image.click(function () {
@@ -54,9 +64,10 @@ $(document).ready(function () {
 });
 
 
-/* Set the width of the side navigation to 250px */
+/* Set the width of the side navigation to 35% */
 function openRightNav() {
   document.getElementById("myRightSidenav").style.width = "35%";
+  document.getElementById("mySidenav").style.width = 0;
 }
 
 /* Set the width of the side navigation to 0 */
