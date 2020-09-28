@@ -48,7 +48,7 @@ $(document).ready(function () {
       $(this).hide();
 
       let $image = $("<img src='assets/checkbox_icon_empty.svg' />").insertAfter(this);
-      $image.css({"display": "flex", "float": "right", "padding-left": "1rem"});
+      $image.css({"display": "flex", "float": "right", "padding-right": "4vw"});
 
       $image.click(function () {
           let $checkbox = $(this).prev(":checkbox");
